@@ -13,7 +13,6 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.4.1/g' package/base-files/files/bin/config_generate
 sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=6.1/g' target/linux/x86/Makefile
-sed -i '/-linkmode external \\/d' feeds/packages/lang/golang/golang-package.mk
 #sed -i 's/OpenWrt/CncTion/g' package/base-files/files/bin/config_generate
 #sed -i "s/.*PKG_VERSION:=.*/PKG_VERSION:=4.3.9_v1.2.14/" package/lean/qBittorrent-static/Makefile
 #sed -i "s/.*PKG_VERSION:=.*/PKG_VERSION:=5.0.0-stable/" package/libs/wolfssl/Makefile
